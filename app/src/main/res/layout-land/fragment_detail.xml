@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/character_imageView"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/avenirltstd_black"
+        android:text="@string/status"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/specy_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_status_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/status_textView"
+        app:layout_constraintEnd_toStartOf="@+id/character_imageView"
+        app:layout_constraintStart_toStartOf="@+id/character_createdAt_textView"
+        app:layout_constraintTop_toTopOf="@+id/status_textView"
+        tools:text="@tools:sample/lorem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/specy_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/specy"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/avenirltstd_black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/gender_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_textView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_specy_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/specy_textView"
+        app:layout_constraintEnd_toEndOf="@+id/character_status_textView"
+        app:layout_constraintStart_toStartOf="@+id/character_gender_textView"
+        app:layout_constraintTop_toTopOf="@+id/specy_textView"
+        tools:text="@tools:sample/lorem"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gender_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/gender"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/avenirltstd_black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/origin_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specy_textView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_gender_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/gender_textView"
+        app:layout_constraintEnd_toEndOf="@+id/character_status_textView"
+        app:layout_constraintStart_toStartOf="@+id/character_origin_textView"
+        app:layout_constraintTop_toTopOf="@+id/gender_textView"
+        tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/origin_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/origin"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/avenirltstd_black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/location_textView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_textView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_origin_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/origin_textView"
+        app:layout_constraintEnd_toEndOf="@+id/character_status_textView"
+        app:layout_constraintStart_toStartOf="@+id/character_location_textView"
+        app:layout_constraintTop_toTopOf="@+id/origin_textView"
+        tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/location_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/location"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/avenirltstd_black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/episodes_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/origin_textView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_location_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/location_textView1"
+        app:layout_constraintEnd_toEndOf="@+id/character_status_textView"
+        app:layout_constraintStart_toStartOf="@+id/character_episodes_textView"
+        app:layout_constraintTop_toTopOf="@+id/location_textView1"
+        tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/episodes_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginBottom="5dp"
+        android:text="@string/episodes"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/avenirltstd_black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/createdAt_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_textView1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_episodes_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/episodes_textView"
+        app:layout_constraintEnd_toEndOf="@+id/character_status_textView"
+        app:layout_constraintStart_toStartOf="@+id/character_createdAt_textView"
+        app:layout_constraintTop_toTopOf="@+id/episodes_textView"
+        tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/createdAt_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/avenirltstd_black"
+        android:maxWidth="120dp"
+        android:text="@string/created_at_in_api"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/episodes_textView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_createdAt_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/avenirltstd_roman"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/createdAt_textView"
+        app:layout_constraintEnd_toStartOf="@+id/character_imageView"
+        app:layout_constraintStart_toEndOf="@id/createdAt_textView"
+        app:layout_constraintTop_toTopOf="@+id/createdAt_textView"
+        tools:text="@tools:sample/lorem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

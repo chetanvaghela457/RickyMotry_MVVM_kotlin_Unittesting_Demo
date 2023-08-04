@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RickAndMorty App</string>
+    <string name="error">Error</string>
+    <string name="status">Status:</string>
+    <string name="specy">Specy:</string>
+    <string name="gender">Gender:</string>
+    <string name="origin">Origin:</string>
+    <string name="location">Location:</string>
+    <string name="textview">TextView</string>
+    <string name="episodes">Episodes:</string>
+    <string name="created_at_in_api">Created at (in API):</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="hello">Hello!</string>
+</resources>
