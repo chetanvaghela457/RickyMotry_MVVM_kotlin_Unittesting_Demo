@@ -3,6 +3,8 @@ RickAndMorty MVVM Unit Test app is built on Clean Architecture and MVVM, which s
 App includes Unit Tests over Data, Domain and, UI layers.
 
 
+# Test Cases
+<img src="/previews/unit_tests.png" width="50%"/>
 
 # App Architecture
 ![Architecture](https://rubygarage.s3.amazonaws.com/uploads/article_image/file/2060/Artboard_15587.png)
